@@ -16,6 +16,7 @@ form.addEventListener('submit', (event) => {
     const password = formElements.password.value;
     if (email === '' || password === '') {
         window.alert('Ops, all fields must be filled');
+        return;
     }
 
     const values = {
